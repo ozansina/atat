@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts\nftcontract.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> nftcontract.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+&nbsp;
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
+import "./fungibleToken.sol";
+&nbsp;
+&nbsp;
+contract NFTContract is ERC721, Ownable {
+    //using SafeMath for uint256;
+    using Math for uint256;
+    FungibleToken public fungibleToken;
+    mapping(address =&gt; uint256) public userNFTBalance;
+    mapping(address =&gt; uint256) public lastMintTimestamp;
+    mapping(address =&gt; uint256) public IntermediateTokenBalance; //yeni NFT mintlendiğinde token mintlemeden token sayısını tutabilmek için
+    //iki fonksiyonda da kullanacağimiz variable'ları universal tanımladım
+    uint256 public NFTIdCounter =1;
+    uint256 currentTimestamp;
+    uint256 daysPassed;
+    bool success;
+&nbsp;
+    constructor(address _fungibleTokenAddress) ERC721("NFTContract", "NFTC") Ownable(msg.sender) {
+        fungibleToken = FungibleToken(_fungibleTokenAddress);
+        lastMintTimestamp[msg.sender] = block.timestamp; 
+        //Deploy anında minttime alıyorum ki variable boş kalmasın, zaten ilk nft mintinde "daysPassed" argümanı işlevsiz 
+        //olacak çarpım 0 olacağı için
+        
+    }
+    
+    function mintNFT() public {
+        _safeMint(msg.sender, NFTIdCounter); 
+        NFTIdCounter +=1;
+        userNFTBalance[msg.sender] += 1;
+        currentTimestamp =block.timestamp;
+        //Yeni NFT ürettiğimizde aradaki sürede eldeki NFT'lerden yield edilen token miktarını storeluyorum ancak işlem yapmıyorum
+        (success,daysPassed) = currentTimestamp.trySub(lastMintTimestamp[msg.sender]);
+        IntermediateTokenBalance[msg.sender] += (userNFTBalance[msg.sender]-1)*100*daysPassed/86400; 
+        //Son eklediğimiz NFT'yi hariç bıraktığımız için hesaplamada -1 kullandım.
+        lastMintTimestamp[msg.sender] = block.timestamp; //Last mint'i stampliyoruz
+    }
+&nbsp;
+   function claimTokens() external {
+    currentTimestamp = block.timestamp; //Claim anındaki time'ı stampliyoruz
+    (success,daysPassed) = currentTimestamp.trySub(lastMintTimestamp[msg.sender]);
+&nbsp;
+    uint256 tokensToClaim;
+    tokensToClaim += 100*daysPassed*userNFTBalance[msg.sender]/86400+IntermediateTokenBalance[msg.sender];
+    //Token balanceımızı, son mintten şimdiye kadarki tüm NFT'lerin yield ettiği token+intermediate step'lerde 
+    // yield edilen tokenler toplamına eşitledim
+    IntermediateTokenBalance[msg.sender] = 0; //Claim ettiğimiz için 0lıyorum
+    
+    require(tokensToClaim &gt; 0, "No tokens to claim");
+    
+    fungibleToken.mint(msg.sender, tokensToClaim);
+    //Token balance'ımız kadar mintleyip claimliyoruz ve balance'ı 0lıyoruz
+    lastMintTimestamp[msg.sender] = currentTimestamp; //Last mint'i tekrar stampliyoruz
+    }
+&nbsp;
+    function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory data) public override {
+        currentTimestamp = block.timestamp;
+        (success,daysPassed) = currentTimestamp.trySub(lastMintTimestamp[msg.sender]);
+        IntermediateTokenBalance[from] += userNFTBalance[from]*100*daysPassed/86400;
+        userNFTBalance[from] -= 1;
+        userNFTBalance[to] += 1;
+        super.safeTransferFrom(from,to, tokenId, data);
+        lastMintTimestamp[from] = block.timestamp;
+        lastMintTimestamp[to] = block.timestamp;
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Oct 23 2023 15:44:42 GMT+0300 (GMT+03:00)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

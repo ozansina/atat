@@ -1,0 +1,16 @@
+{
+    "name": "Beyaz Saray",
+    "description": "Emperyalist At",
+    "image": "ipfs://QmWB98Ueswdizr88gJTwkjm9KBw3S93cz6Nxy9aFGZzRmZ/2.jpg",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Common"
+      }
+    ]
+  }
+  

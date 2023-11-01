@@ -1,0 +1,16 @@
+{
+    "name": "Yük Eşeği",
+    "description": "Buna bineriz, yükümüzü çekerr",
+    "image": "ipfs://QmWB98Ueswdizr88gJTwkjm9KBw3S93cz6Nxy9aFGZzRmZ/3.jpg",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Epic"
+      }
+    ]
+  }
+  

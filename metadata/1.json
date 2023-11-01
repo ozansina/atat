@@ -1,0 +1,16 @@
+{
+    "name": "Şahbatur",
+    "description": "At gibi at",
+    "image": "ipfs://QmWB98Ueswdizr88gJTwkjm9KBw3S93cz6Nxy9aFGZzRmZ/1.jpg",
+    "attributes": [
+      {
+        "trait_type": "Color",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Rare"
+      }
+    ]
+  }
+  
